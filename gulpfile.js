@@ -8,7 +8,7 @@ var sourceFiles = "scss/*.scss";
 
 //Prints the error that was found during the compilation, and makes sure that the task keeps running
 function catchError(e) {
-	console.log(e);
+	console.log(e.message);
 	this.emit("end");
 }
 
