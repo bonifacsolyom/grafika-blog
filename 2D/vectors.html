@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vektorok</title>
 		<link rel="stylesheet" href="/style.css" />
+		<script src="/scripts/script.js" type="module"></script>
 	</head>
 	<body>
 		<h2>Vektorok</h2>
@@ -17,10 +18,15 @@
 		<p>
 			Egy vektor tulajdonképpen egy nyíl, melynek van iránya és hossza.
 			2D-ben egy vektort matematikailag két számmal (koordinátával) lehet
-			jelölni (3D-ben három számmal jelölnénk). Pontokat általában nagy
-			betűvel, vektorokat pedig általában kis betűvel jelölünk.
+			jelölni (3D-ben három számmal jelölnénk). A következőképpen
+			jelöljük:
 		</p>
+		<!-- TODO: ha hoverel a user a formulában egy pontra/vektorra, akkor highlightolódjon az ábrán -->
 		<p class="formula">v(3, 2)</p>
+		<p class="misc-note">
+			Pontokat általában nagy betűvel, vektorokat pedig általában kis
+			betűvel jelölünk.
+		</p>
 		<!-- TODO: az "ábrán" szó legyen egy link, mondjuk highlightolja a képet hovernél, kattintásra ugorjon oda -->
 		<p>
 			Egy vektorra tekinthetünk eltolásként is: Az ábrán az
@@ -41,9 +47,20 @@
 		<!-- TODO: indexeket rendesen megjeleníteni -->
 		<p>
 			Két vektort úgy adunk össze, hogy az egyik vektort (v_1) eltoljuk a
-			másik vektor végpontjába (v_2)
+			másik vektor végpontjába (v_2). A két vektor összege az első vektor
+			kiindulópontjából a második vektor végpontjába mutató vektor lesz.
 		</p>
 		<img src="/images/vector_addition.png" alt="Vektorösszeadás" />
+
+		<p class="formula">v_1 + v_2 = v</p>
+
+		<p>
+			Matematikailag ez csak annyit tesz, hogy a két vektor koordinátáit
+			összeadjuk (az elsőt az elsővel, a másodikat a másodikkal).
+		</p>
+
+		<p class="formula">(2, 1) + (1, 3) = (3, 4)</p>
+
 		<div class="misc-note">
 			<p>
 				Mindegy, hogy két vektor összeadásánál v_1-et toljuk-e el
@@ -59,5 +76,36 @@
 				Ezt a tulajdonságot <strong>kommutativitásnak</strong> hívjuk.
 			</p>
 		</div>
+
+		<h3>Kivonás</h3>
+		<p>
+			Két vektor különbsége a második vektor végpontjából az első vektor
+			végpontjába mutató vektor.
+		</p>
+		<img src="/images/vector_subtraction.png" alt="" />
+		<p class="formula">v_1 - v_2 = v</p>
+
+		<p>
+			Hasonlóan az összeadáshoz, ilyenkor csak annyi történik, hogy a két
+			vektor koordinátáit kivonjuk egymásból.
+		</p>
+
+		<p class="formula">(2, -1) - (2, 1) = (0, -2)</p>
+
+		<h3>Skálázás</h3>
+		Egy vektor hosszát megváltoztathatjuk az iránya megváltoztatása nélkül
+		úgy, hogy megszorozzuk egy sima számmal, azaz egy
+		<strong>skalárral</strong>.
+
+		<img src="/images/placeholder.png" alt="" />
+
+		<p class="formula">a * v_1 = v</p>
+
+		A vektor koordinátáinak mindegyikét megszorozzuk a skalárral:
+
+		<p class="formula">2 * (2, 3) = (4, 6)</p>
+
+
+		<!-- TODO: említsd meg FONTOS-ként, hogy egy vektornak nincs pozíciója, csak iránya. hozd fel példaként a kivonást pl, mert confusing lehet -->
 	</body>
 </html>

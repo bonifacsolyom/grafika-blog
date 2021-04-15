@@ -1,7 +1,9 @@
 /* Automatically generated from .scss, do not directly edit */
 
+@charset "UTF-8";
+@import url(../npm_modules/balloon-css/src/balloon.css);
 .formula {
-  font-size: 2rem; }
+  font-size: 1.4rem; }
 
 .illustration-vector {
   font-weight: bold; }
@@ -13,5 +15,15 @@
 .misc-note {
   padding: 10px;
   margin-right: 2rem;
+  max-width: fit-content;
   background-color: lightgray;
   border: solid gray 1px; }
+  .misc-note > p:first-of-type {
+    margin-top: 0; }
+  .misc-note::before {
+    content: "Megjegyzés:";
+    display: block;
+    padding: 2px 0; }
+
+.hover-tip {
+  data-balloon-pos: "up"; }
