@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vektorok</title>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<h2>Vektorok</h2>
+		<p>
+			Ez valószínűleg sokatoknak csak ismétlés. Használd emlékeztetőnek,
+			ha esetleg valamit elfelejtettél időközben.
+		</p>
+		<img src="/images/vector.png" alt="Példa egy vektorra" />
+		<p>
+			Egy vektor tulajdonképpen egy nyíl, melynek van iránya és hossza.
+			2D-ben egy vektort matematikailag két számmal (koordinátával) lehet
+			jelölni (3D-ben három számmal jelölnénk). Pontokat általában nagy
+			betűvel, vektorokat pedig általában kis betűvel jelölünk.
+		</p>
+		<p class="formula">v(3, 2)</p>
+		<!-- TODO: az "ábrán" szó legyen egy link, mondjuk highlightolja a képet hovernél, kattintásra ugorjon oda -->
+		<p>
+			Egy vektorra tekinthetünk eltolásként is: Az ábrán az
+			<span class="illustration-point">A</span> pontot pont
+			<span class="illustration-vector">v</span>-vel kell eltolni, hogy a
+			<span class="illustration-point">B</span>-be jussunk. Ez az
+			elképzelés intuitívabb lehet néhányatok számára.
+		</p>
+		<!-- TODO: legyen oszlopvektor -->
+		<p class="formula">
+			<span class="illustration-point">A(1, 2)</span> +
+			<span class="illustration-vector">v(3, 4)</span> =
+			<span class="illustration-point">B(4, 4)</span>
+		</p>
+
+		<h2>Vektorműveletek</h2>
+		<h3>Összeadás</h3>
+		<!-- TODO: indexeket rendesen megjeleníteni -->
+		<p>
+			Két vektort úgy adunk össze, hogy az egyik vektort (v_1) eltoljuk a
+			másik vektor végpontjába (v_2)
+		</p>
+		<img src="/images/vector_addition.png" alt="Vektorösszeadás" />
+		<div class="misc-note">
+			<p>
+				Mindegy, hogy két vektor összeadásánál v_1-et toljuk-e el
+				v_2-be, vagy fordítva.
+			</p>
+			<img
+				src="/images/vector_addition_commutative.png"
+				alt="A vektor kommutativitása"
+			/>
+			<p>Azaz</p>
+			<p class="formula">v_1 + v_2 = v_2 + v_1</p>
+			<p>
+				Ezt a tulajdonságot <strong>kommutativitásnak</strong> hívjuk.
+			</p>
+		</div>
+	</body>
+</html>
