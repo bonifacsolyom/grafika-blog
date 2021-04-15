@@ -1,20 +1,17 @@
+/* Automatically generated from .scss, do not directly edit */
+
 .formula {
-	font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .illustration-vector {
-	font-weight: bold;
-}
+  font-weight: bold; }
 
 .illustration-point {
-	color: red;
-	font-weight: bold;
-}
+  color: red;
+  font-weight: bold; }
 
 .misc-note {
-	padding: 10px;
-	margin-right: 2rem;
-
-	background-color: lightgray;
-	border: solid gray 1px;
-}
+  padding: 10px;
+  margin-right: 2rem;
+  background-color: lightgray;
+  border: solid gray 1px; }
